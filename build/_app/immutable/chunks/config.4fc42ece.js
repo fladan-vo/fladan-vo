@@ -1,0 +1,1 @@
+const s="Fladan.se",t="En sida dedikerad till Fladan, Vässarös småbåtsverksamhet.",a="- Fladan",e=10,n=[{title:"Nyheter",route:"/blog"},{title:"Om fladan",route:"/about"}];export{a,t as b,n,e as p,s};
