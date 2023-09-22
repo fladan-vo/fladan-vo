@@ -9,3 +9,4 @@ excerpt: Det här är bara en testnyhet, den innehåller tyvärr inget intressan
 ---
 
 Det kommer att komma lite roligare nyheter längre fram. En sak i taget. Det här är bara för att testa det nya systemet.
+Lite mer uppdatering för att få en ny artefakt.
