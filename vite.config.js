@@ -7,8 +7,7 @@ const config = {
 		fs: {
 			allow: ['.']
 		}
-	},
-	base: '/fladan/'
+	}
 };
 
 export default config;
