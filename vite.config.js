@@ -1,4 +1,4 @@
-import { sveltekit } from '@sveltejs/kit/vite'
+import { sveltekit } from '@sveltejs/kit/vite';
 
 /** @type {import('vite').UserConfig} */
 const config = {
@@ -7,7 +7,8 @@ const config = {
 		fs: {
 			allow: ['.']
 		}
-	}
+	},
+	base: '/fladan/'
 };
 
-export default config
+export default config;
