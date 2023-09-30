@@ -33,7 +33,7 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: '/fladan/'
+          BASE_PATH: '/fladan'
         run: |
           pnpm run build
           touch build/.nojekyll
