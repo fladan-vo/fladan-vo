@@ -1,1 +1,0 @@
-import{b as s}from"./paths.de7e26f2.js";const a="Fladan.se",e="En sida dedikerad till Fladan, Vässarös småbåtsverksamhet.",o="- Fladan",n=10,i=[{title:"Nyheter",route:`${s}/blog`},{title:"Om fladan",route:`${s}/about`}];export{o as a,e as b,i as n,n as p,a as s};
