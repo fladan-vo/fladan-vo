@@ -28,7 +28,9 @@ const config = {
 	],
 
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			fallback: 'error.html'
+		}),
 		prerender: {
 			entries: [
 				'*',
