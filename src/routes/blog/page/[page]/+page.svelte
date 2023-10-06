@@ -1,14 +1,14 @@
 <script>
-	import PostsList from '$lib/components/PostsList.svelte';
-	import Pagination from '$lib/components/Pagination.svelte';
-	import { postsPerPage, siteDescription } from '$lib/config';
-	import { base } from '$app/paths';
+	import PostsList from '$lib/components/PostsList.svelte'
+	import Pagination from '$lib/components/Pagination.svelte'
+	import { postsPerPage, siteDescription } from '$lib/config'
+	import { base } from '$app/paths'
 
-	export let data;
-	const { page, totalPosts, posts } = data;
+	export let data
+	const { page, totalPosts, posts } = data
 
-	$: lowerBound = page * postsPerPage - (postsPerPage - 1) || 1;
-	$: upperBound = Math.min(page * postsPerPage, totalPosts);
+	$: lowerBound = page * postsPerPage - (postsPerPage - 1) || 1
+	$: upperBound = Math.min(page * postsPerPage, totalPosts)
 </script>
 
 <!-- This file handles any /blog/page/x route for pagination -->

@@ -1,8 +1,8 @@
 <script>
-	import { base } from '$app/paths';
+	import { base } from '$app/paths'
 
-	export let data;
-	const { uniqueCategories } = data;
+	export let data
+	const { uniqueCategories } = data
 </script>
 
 <svelte:head>

@@ -1,11 +1,11 @@
 <script>
 	import { postsPerPage } from '$lib/config'
-	import { base } from '$app/paths';
+	import { base } from '$app/paths'
 
 	export let currentPage
 	export let totalPosts
 	export let path = '/blog/page'
-	
+
 	let pagesAvailable
 	$: pagesAvailable = Math.ceil(totalPosts / postsPerPage)
 
@@ -17,14 +17,14 @@
 	{#if pagesAvailable > 1}
 		<nav aria-label="Pagination navigation" class="pagination">
 			<ul>
-				{#each Array.from({length: pagesAvailable}, (_, i) => i + 1) as page}
+				{#each Array.from({ length: pagesAvailable }, (_, i) => i + 1) as page}
 					<li>
-						<a href="{base}/{path}/{page}" aria-current="{isCurrentPage(page)}">
+						<a href="{base}/{path}/{page}" aria-current={isCurrentPage(page)}>
 							<span class="sr-only">
 								{#if isCurrentPage(page)}
-									Current page: 
+									Current page:
 								{:else}
-									Go to page 
+									Go to page
 								{/if}
 							</span>
 							{page}

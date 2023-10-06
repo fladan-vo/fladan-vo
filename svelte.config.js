@@ -1,10 +1,10 @@
-import adapter from '@sveltejs/adapter-static';
-import { mdsvex } from 'mdsvex';
-import preprocess from 'svelte-preprocess';
-import rehypeAutolinkHeadings from 'rehype-autolink-headings';
-import rehypeSlug from 'rehype-slug';
+import adapter from '@sveltejs/adapter-static'
+import { mdsvex } from 'mdsvex'
+import preprocess from 'svelte-preprocess'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import rehypeSlug from 'rehype-slug'
 
-const dev = process.argv.includes('dev');
+const dev = process.argv.includes('dev')
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -47,6 +47,6 @@ const config = {
 			base: dev ? '' : '/fladan.se'
 		}
 	}
-};
+}
 
-export default config;
+export default config

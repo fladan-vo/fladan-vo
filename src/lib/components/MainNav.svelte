@@ -9,9 +9,9 @@
 <nav class="main-nav" class:open={$isMenuOpen}>
 	<ul>
 		{#each navItems as page}
-		<NavItem href={page.route}>
-			{page.title}
-		</NavItem>
+			<NavItem href={page.route}>
+				{page.title}
+			</NavItem>
 		{/each}
 	</ul>
 	<HamburgerMenuButton closeOnly="true" />

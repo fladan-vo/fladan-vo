@@ -1,7 +1,7 @@
 <script>
-	import { base } from '$app/paths';
+	import { base } from '$app/paths'
 
-	export let posts = [];
+	export let posts = []
 </script>
 
 <ul class="posts-list">
@@ -14,9 +14,9 @@
 						alt=""
 						width={post.coverWidth}
 						height={post.coverHeight}
-						style="ratio: {post.coverWidth} / {post.coverHeight}" />
+						style="ratio: {post.coverWidth} / {post.coverHeight}"
+					/>
 					<h2>{post.title}</h2>
-
 				</a>
 
 				{#if post.categories}

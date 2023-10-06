@@ -1,10 +1,8 @@
 name: Deploy to GitHub Pages
 
-
 on:
   push:
     branches: 'master'
-
 
 jobs:
   build_site:
@@ -13,12 +11,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
           version: 8
-
 
       - name: Install Node.js
         uses: actions/setup-node@v3
@@ -26,10 +22,8 @@ jobs:
           node-version: 18
           cache: pnpm
 
-
       - name: Install dependencies
         run: pnpm install
-
 
       - name: build
         env:
@@ -39,27 +33,23 @@ jobs:
           touch build/.nojekyll
           cp build/index.html build/404.html
 
-
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v1
         with:
           path: 'build/'
 
-
   deploy:
     needs: build_site
     runs-on: ubuntu-latest
-
 
     permissions:
       pages: write
       id-token: write
 
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    
+
     steps:
       - name: Deploy
         id: deployment

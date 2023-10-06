@@ -1,7 +1,7 @@
 <script>
-	import MainNav from './MainNav.svelte';
-	import { siteAuthor } from '$lib/config';
-	import { base } from '$app/paths';
+	import MainNav from './MainNav.svelte'
+	import { siteAuthor } from '$lib/config'
+	import { base } from '$app/paths'
 </script>
 
 <footer>

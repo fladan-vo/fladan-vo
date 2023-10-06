@@ -1,20 +1,11 @@
 <script>
-	import { base } from '$app/paths';
+	import { base } from '$app/paths'
 
-	export let data;
+	export let data
 
-	const {
-		title,
-		excerpt,
-		date,
-		updated,
-		author,
-		coverImage,
-		coverWidth,
-		coverHeight,
-		categories
-	} = data.meta;
-	const { PostContent } = data;
+	const { title, excerpt, date, updated, author, coverImage, coverWidth, coverHeight, categories } =
+		data.meta
+	const { PostContent } = data
 </script>
 
 <!-- This file renders each individual blog post for reading. Be sure to update the svelte:head below -->
@@ -41,7 +32,8 @@
 		alt=""
 		style="aspect-ratio: {coverWidth} / {coverHeight};"
 		width={coverWidth}
-		height={coverHeight} />
+		height={coverHeight}
+	/>
 
 	<h1>{title}</h1>
 

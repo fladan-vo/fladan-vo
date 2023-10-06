@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Om fladan</title>
+<title>Om fladan</title>
 </svelte:head>
 
 # Vad är Fladan?
@@ -12,22 +12,22 @@ Fladan har ett antal segelbåtar, kanoter och motorbåtar.
 
 ### Segelbåtar
 
-* 7st öppna 7m långa båtar av typen Lots
-* 5st öppna 6m långa båtar av typen Torekov
-* 6st snabba jollar av typen RS Quest
-* 22st moderna optimistjollar
+- 7st öppna 7m långa båtar av typen Lots
+- 5st öppna 6m långa båtar av typen Torekov
+- 6st snabba jollar av typen RS Quest
+- 22st moderna optimistjollar
 
 ### Kanoter och roddbåtar
 
-* 24st kanadensarkanoter i aluminium
-* 1 roddbåt, Robuster, i aluminium
+- 24st kanadensarkanoter i aluminium
+- 1 roddbåt, Robuster, i aluminium
 
 ### Motorbåtar
 
 Fladans motorbåtar används som säkerhetsutrustning lånas inte ut till besökare.
 
-* Alucraft 20sp
-* 5m räddningsbåt
-* Crescent Flexi
-* Minibuster
-* Buster XS
+- Alucraft 20sp
+- 5m räddningsbåt
+- Crescent Flexi
+- Minibuster
+- Buster XS
