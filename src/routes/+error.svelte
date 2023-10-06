@@ -1,18 +1,12 @@
 <script>
 	import { page } from '$app/stores'
-	import { base } from '$app/paths'
 </script>
 
-<!-- This page handles any error encountered by the site. -->
-<h2>{$page.status}</h2>
-<p class="subhead">{$page.error.message}</p>
-
-<p>
-	<strong>Sorry!</strong>
-	Maybe try one of these links?
-</p>
-<ul>
-	<li>
-		<a href="{base}/">Home</a>
-	</li>
-</ul>
+<div class="mx-auto max-w-page">
+	<h1 class="text-4xl font-bold mt-8">Woops!</h1>
+	<p class="py-4 text-xl">
+		{#if $page.status === 404}
+			We checked everywhere, but the thing you wanted was NotFound. Sorry!
+		{:else}An unexpected error occurred.{/if}
+	</p>
+</div>
