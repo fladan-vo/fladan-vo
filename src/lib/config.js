@@ -1,3 +1,5 @@
+import { base } from '$app/paths';
+
 export const siteTitle = 'Fladan.se';
 export const siteDescription = 'En sida dedikerad till Fladan, Vässarös småbåtsverksamhet.';
 export const siteURL = 'fladan.se';
@@ -11,10 +13,10 @@ export const postsPerPage = 10;
 export const navItems = [
 	{
 		title: 'Nyheter',
-		route: '/blog'
+		route: `${base}/blog`
 	},
 	{
 		title: 'Om fladan',
-		route: '/about'
+		route: `${base}/about`
 	}
 ];

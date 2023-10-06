@@ -1,4 +1,6 @@
 <script>
+	import { base } from '$app/paths';
+
 	export let posts = [];
 </script>
 
@@ -6,9 +8,9 @@
 	{#each posts as post}
 		<li>
 			<article>
-				<a href="/blog/{post.slug}">
+				<a href="{base}/blog/{post.slug}">
 					<img
-						src={post.coverImage}
+						src="{base}/{post.coverImage}"
 						alt=""
 						width={post.coverWidth}
 						height={post.coverHeight}
@@ -22,7 +24,7 @@
 						<ul>
 							{#each post.categories as category}
 								<li>
-									<a href="/blog/category/{category}/">{category}</a>
+									<a href="{base}/blog/category/{category}/">{category}</a>
 								</li>
 							{/each}
 						</ul>

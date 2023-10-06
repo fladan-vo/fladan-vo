@@ -1,4 +1,6 @@
 <script>
+	import { base } from '$app/paths';
+
 	export let data;
 
 	const {
@@ -35,7 +37,7 @@
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
 	<img
 		class="cover-image"
-		src={coverImage}
+		src="{base}/{coverImage}"
 		alt=""
 		style="aspect-ratio: {coverWidth} / {coverHeight};"
 		width={coverWidth}
@@ -59,7 +61,7 @@
 			<ul>
 				{#each categories as category}
 					<li>
-						<a href="/blog/category/{category}/">{category}</a>
+						<a href="{base}/blog/category/{category}/">{category}</a>
 					</li>
 				{/each}
 			</ul>

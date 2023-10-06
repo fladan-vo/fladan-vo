@@ -1,6 +1,7 @@
 <script>
 	import MainNav from './MainNav.svelte';
 	import { siteAuthor } from '$lib/config';
+	import { base } from '$app/paths';
 </script>
 
 <footer>
@@ -9,10 +10,10 @@
 	<nav>
 		<ul>
 			<li>
-				<a href="/api/rss.xml" data-sveltekit-reload>RSS</a>
+				<a href="{base}/api/rss.xml" data-sveltekit-reload>RSS</a>
 			</li>
 			<li>
-				<a href="/">Hem</a>
+				<a href="{base}/">Hem</a>
 			</li>
 		</ul>
 	</nav>
