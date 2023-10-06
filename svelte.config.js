@@ -42,7 +42,7 @@ const config = {
 			]
 		},
 		paths: {
-			base: dev ? '/fladan' : '/fladan'
+			base: dev ? '' : '/fladan.se'
 		}
 	}
 };
