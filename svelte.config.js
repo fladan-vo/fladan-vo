@@ -29,7 +29,7 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-			fallback: '404.html'
+			// fallback: '404.html'
 		}),
 		prerender: {
 			entries: [
@@ -40,7 +40,9 @@ const config = {
 				'/blog/category/page/',
 				'/blog/category/page/*',
 				'/blog/page/',
-				'/blog/page/*'
+				'/blog/page/*',
+				'/about',
+				'/404'
 			]
 		},
 		paths: {
